@@ -2,9 +2,10 @@ version: '3.7'
 services:
   gostack_postgres:
     image: postgres
-    container_name: gostack_postgres
+    container_name: gostack_gobarber
     ports:
       - 5432:5432
     environment:
+      POSTGRES_DATABASE: gostack_gobarber
       POSTGRES_USER: admin
       POSTGRES_PASSWORD: admin
